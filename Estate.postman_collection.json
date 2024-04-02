@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "4e031a84-0b67-40dd-9e78-25f063b01012",
+		"name": "Estate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29978583"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "SignUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"ashu\",\r\n    \"email\":\"ashu@gmail.com\",\r\n    \"password\":\"ashu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/auth/signup",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign In",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"amit@gmail.com\",\r\n    \"password\":\"amit\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/auth/signin",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Google Auth",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"ashu\",\r\n    \"email\":\"ashu@gmail.com\",\r\n    \"avatar\":\"linkofavatar\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/auth/google",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"google"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"amitamit\",\r\n    \"email\":\"amit@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/auth/user/65fa90b765f2756158c1a8f1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"user",
+								"65fa90b765f2756158c1a8f1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/auth/user/65fa90b765f2756158c1a8f1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"user",
+								"65fa90b765f2756158c1a8f1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signout user",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get single user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/auth/get/65fbb79bd161277759437362",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"get",
+								"65fbb79bd161277759437362"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Listing",
+			"item": [
+				{
+					"name": "Create List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/listing",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"listing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Listing",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/listing/65fbb79bd161277759437362",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"listing",
+								"65fbb79bd161277759437362"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Listing",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/listing/65fd26da23202015b13c94e6",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"listing",
+								"65fd26da23202015b13c94e6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Listing",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"my nodejs assignment\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/listing/65fd3220216de1a1dbc478a1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"listing",
+								"65fd3220216de1a1dbc478a1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/listing/list/65fd3220216de1a1dbc478a1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"listing",
+								"list",
+								"65fd3220216de1a1dbc478a1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listing filter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/listing?searchTerm=das",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"listing"
+							],
+							"query": [
+								{
+									"key": "searchTerm",
+									"value": "das"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
